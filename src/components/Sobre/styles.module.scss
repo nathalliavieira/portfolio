@@ -73,6 +73,9 @@
 
 @media (max-width: 1280px) {
     .infos {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+
         p{
             font-size: 16px;
         }
@@ -90,64 +93,153 @@
     }
 }
 
+@media (max-width: 945px){
+    .tecnologiasContainer{
+        width: 420px;
+        margin-bottom: 0;
+        gap: 15px;
+    }
+
+    .tecnologias{
+        span{
+            font-size: 15px;
+            width: 100px;
+        }
+    }
+
+    .infos{
+        padding: 50px 80px;
+        padding-bottom: 120px;
+
+        p{
+            width: 100%;
+        }
+    }
+}
+
 @media (max-width: 800px){
     .infos{
         h1{
             font-size: 28px;
         }
-
-        p{
-            width: 600px;
-        }
-    }
-
-    .tecnologiasContainer{
-        margin-bottom: 30px;
     }
 }
 
 @media (max-width: 680px){
-    .tecnologiasContainer{
-        width: 400px;
-    }
-
-    .tecnologias{
-        span{
-            width: 85px;
-        }
-    }
-
     .infos{
         p{
             font-size: 14px !important;
-            max-width: 400px;
         }
     }
 }
 
 @media (max-width: 480px){
     .infos{
+        padding: 10px;
+        padding-bottom: 80px;
+
         h1{
             width: 150px;
             margin-bottom: 5px;
         }
-
-        p{
-            max-width: 350px;
-        }
     }
 
     .tecnologiasContainer{
-        width: 300px;
-        height: 300px;
         margin-bottom: 10px;
         margin-top: -50px;
     }
-
-    .infos{
-        padding-bottom: 80px;
-    }
 }
+
+// .travessao{
+//     width: 185px;
+//     border-bottom: 2px solid var(--primaria);
+//     box-shadow: 0 2px 4px rgba(167, 139, 250, 0.6);
+//     margin-bottom: 40px;
+// }
+
+// .carouselWrapper{
+//     width: 100%;
+//     overflow: hidden;
+//     position: relative;
+//     padding: 20px 0;
+// }
+
+// .carouselTrack{
+//     display: flex;
+//     width: fit-content;
+//     animation: scroll 30s linear infinite;
+// }
+
+// .carouselWrapper:hover .carouselTrack {
+//     animation-play-state: paused;
+// }
+
+// .images{
+//     display: flex;
+//     gap: 30px;
+//     margin-top: 40px;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// @keyframes scroll{
+//     from{
+//         transform: translateX(0%);
+//     }
+
+//     to{
+//         transform: translateX(-50%);
+//     }
+// }
+
+// .imgC{
+//     margin-right: 30px;
+// }
+
+// ---------------------
+
+// @media (max-width: 680px){
+//     .tecnologiasContainer{
+//         width: 400px;
+//     }
+
+//     .tecnologias{
+//         span{
+//             width: 85px;
+//         }
+//     }
+
+//     .infos{
+//         p{
+//             font-size: 14px !important;
+//             max-width: 400px;
+//         }
+//     }
+// }
+
+// @media (max-width: 480px){
+//     .infos{
+//         h1{
+//             width: 150px;
+//             margin-bottom: 5px;
+//         }
+
+//         p{
+//             max-width: 350px;
+//         }
+//     }
+
+//     .tecnologiasContainer{
+//         width: 300px;
+//         height: 300px;
+//         margin-bottom: 10px;
+//         margin-top: -50px;
+//     }
+
+//     .infos{
+//         padding-bottom: 80px;
+//     }
+// }
 
 // .travessao{
 //     width: 185px;

@@ -171,119 +171,145 @@
     }
 }
 
-@media (max-width: 945px) {
-    .capa{
-        height: 200px;
-        width: 350px;
-    }
-
-    .container{
-        span{
-            max-width: 340px;
-        }
-
-        p{
-            font-size: 17px;
-            max-width: 350px;
-            text-align: center;
-            padding-top: 8px;
-        }
-    }
-
-    .tecnologias{
-        height: 35px;
-    }
-
-    .links{
-        flex-direction: column;
-        gap: 5px;
-
-        a{
-            width: 190px;
-            text-align: center;
-        }
-    }
-
-    .projeto{
-        height: 330px;
-    }
-}
-
-@media (max-width: 800px){
+@media (max-width: 945px){
     .projetos{
         display: flex;
         flex-direction: column;
-        gap: 50px;
-    }
-
-    .capa{
-        height: 280px;
-        width: 500px;
-    }
-
-    .container{
-        p{
-            font-size: 20px;
-            padding-top: 0;
-        }
-
-        span{
-            max-width: 480px;
-            font-size: 16px;
-        }
-    }
-
-    .links{
-        flex-direction: row;
-        gap: 5px;
-    }
-
-    .vercel{
-        width: 130px !important;
+        gap: 35px;
     }
 }
 
-@media (max-width: 680px){
-    .capa{
-        height: 220px;
-        width: 400px;
+@media (max-width: 768px){
+    .overlay{
+        opacity: 1;
+        background: #a78bfa62;
+        height: auto; /* só ocupa a altura do retângulo */
+        bottom: 0;
+        top: auto;
+        padding: 8px;
+        font-size: 1rem;
+        justify-content: center;
+        border-radius: 0;
     }
 
-    .container{
-        span{
-            max-width: 380px;
-        }
-    }
-
-    .projeto{
-        height: 280px;
-    }
-}
-
-@media (max-width: 480px){
-    .capa{
-        height: 200px;
-        width: 300px;
-    }
-
-    .projeto{
-        max-width: 300px;
-        height: 310px;
-        gap: 20px;
-    }
-
-    .container{
-        span{
-            max-width: 280px;
-        }
-    }
-
-    .links{
-        flex-direction: column;
-
-        a{
-            width: 190px !important;
-            text-align: center;
-        }
+    .capaContainer:hover .capa{
+        filter: brightness(100%);
     }
 }
+
+// @media (max-width: 945px) {
+//     .capa{
+//         height: 200px;
+//         width: 350px;
+//     }
+
+//     .container{
+//         span{
+//             max-width: 340px;
+//         }
+
+//         p{
+//             font-size: 17px;
+//             max-width: 350px;
+//             text-align: center;
+//             padding-top: 8px;
+//         }
+//     }
+
+//     .tecnologias{
+//         height: 35px;
+//     }
+
+//     .links{
+//         flex-direction: column;
+//         gap: 5px;
+
+//         a{
+//             width: 190px;
+//             text-align: center;
+//         }
+//     }
+
+//     .projeto{
+//         height: 330px;
+//     }
+// }
+
+// @media (max-width: 800px){
+//     .projetos{
+//         display: flex;
+//         flex-direction: column;
+//         gap: 50px;
+//     }
+
+//     .capa{
+//         height: 280px;
+//         width: 500px;
+//     }
+
+//     .container{
+//         p{
+//             font-size: 20px;
+//             padding-top: 0;
+//         }
+
+//         span{
+//             max-width: 480px;
+//             font-size: 16px;
+//         }
+//     }
+
+//     .links{
+//         flex-direction: row;
+//         gap: 5px;
+//     }
+
+//     .vercel{
+//         width: 130px !important;
+//     }
+// }
+
+// @media (max-width: 680px){
+//     .capa{
+//         height: 220px;
+//         width: 400px;
+//     }
+
+//     .container{
+//         span{
+//             max-width: 380px;
+//         }
+//     }
+
+//     .projeto{
+//         height: 280px;
+//     }
+// }
+
+// @media (max-width: 480px){
+//     .capa{
+//         height: 200px;
+//         width: 300px;
+//     }
+
+//     .projeto{
+//         max-width: 300px;
+//         height: 310px;
+//         gap: 20px;
+//     }
+
+//     .container{
+//         span{
+//             max-width: 280px;
+//         }
+//     }
+
+//     .links{
+//         flex-direction: column;
+
+//         a{
+//             width: 190px !important;
+//             text-align: center;
+//         }
+//     }
+// }
