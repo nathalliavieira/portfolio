@@ -19,22 +19,24 @@ export default function Home() {
             nathallia {'>'}
           </a>
           
-          <div className={styles.links}>
+          <div className={styles.containerLinks}>
             <div className={styles.buttons}>
-              <button disabled={lang === "pt"} onClick={() => changeLang("pt")}>🇧🇷</button>
-              <button disabled={lang === "en"} onClick={() => changeLang("en")}>🇺🇸</button>
-              <button disabled={lang === "es"} onClick={() => changeLang("es")}>🇪🇸</button>
+              <button disabled={lang === "pt"} onClick={() => changeLang("pt")}>BR</button>
+              <button disabled={lang === "en"} onClick={() => changeLang("en")}>US</button>
+              <button disabled={lang === "es"} onClick={() => changeLang("es")}>ES</button>
             </div>
 
-            <a href="#sobre">
-              {t("menu.sobre")}
-            </a>
-            <a href="#projetos">
-              {t("menu.projetos")}
-            </a>
-            <a href="#contatos">
-              {t("menu.contatos")}
-            </a>
+            <div className={styles.links}>
+              <a href="#sobre">
+                {t("menu.sobre")}
+              </a>
+              <a href="#projetos">
+                {t("menu.projetos")}
+              </a>
+              <a href="#contatos">
+                {t("menu.contatos")}
+              </a>
+            </div>
           </div>
         </nav>
       </div>

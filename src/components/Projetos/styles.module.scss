@@ -203,6 +203,8 @@
     }
 
     .projeto{
+        height: 280px;
+
         p{
             text-align: center;
             padding-top: 10px;
@@ -218,8 +220,14 @@
     }
 
     .links{
+        flex-direction: column;
         gap: 5px;
         margin-bottom: 15px;
+
+        a{
+            width: 205px;
+            text-align: center;
+        }
     }
 
     .container{

@@ -1,5 +1,5 @@
 export default function handler(req, res){
-    const lang = req.query.lang || "pt";
+    const lang = req.query.lang?.toLowerCase() || "pt";
 
     const projetos = [
         {

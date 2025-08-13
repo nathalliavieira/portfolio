@@ -14,6 +14,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 import { useTranslation } from "@/context/TranslationContext";
+import { LiaAngleLeftSolid } from "react-icons/lia";
 
 interface ProjectProps{
     id: number;
@@ -60,7 +61,7 @@ export default function Projetos(){
         };
 
         carregarProjetos();
-    },[]);
+    },[lang]);
 
     function abrirLightbox(imagens: { src: string }[], i: number) {
         setSlides(imagens);
@@ -95,7 +96,7 @@ export default function Projetos(){
                             <span className={styles.tecnologias}>{projeto.tecnologias}</span>
 
                             <div className={styles.links}>
-                                <a href={projeto.vercel} target="_blank" rel="noopener noreferrer" className={styles.vercel}>{t("projetos.viewDetails")} <FiChevronRight size={15} className={styles.icon}/></a>
+                                <a href={projeto.vercel} target="_blank" rel="noopener noreferrer">{t("projetos.viewDetails")} <FiChevronRight size={15} className={styles.icon}/></a>
                                 <a href={projeto.github} target="_blank" rel="noopener noreferrer">{t("projetos.viewCode")} <FiGithub size={15} className={styles.icon}/></a>
                             </div>
                         </div>
