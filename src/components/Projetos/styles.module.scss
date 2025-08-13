@@ -53,7 +53,7 @@
     justify-content: center;
     gap: 20px;
     background-color: #f4f6fb;
-    //padding: 10px 0;
+    padding: 0 10px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     height: 233px;
@@ -194,6 +194,36 @@
 
     .capaContainer:hover .capa{
         filter: brightness(100%);
+    }
+}
+
+@media (max-width: 480px){
+    .projetos{
+        width: 350px;
+    }
+
+    .projeto{
+        p{
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        span{
+            width: 330px
+        }
+    }
+
+    .capa{
+        width: 350px;
+    }
+
+    .links{
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+
+    .container{
+        gap: 25px;
     }
 }
 

@@ -1,39 +1,43 @@
 import styles from "./styles.module.scss";
 import Image from "next/image";
 
-import bootstrap from "../../../public/bootstrap.png";
-import c from "../../../public/c++.png";
-import css from "../../../public/css.png";
-import git from "../../../public/git.png";
-import github from "../../../public/github.png";
-import html from "../../../public/html.png";
-import java from "../../../public/java.png";
-import nextjs from "../../../public/nextjs.png";
-import nodejs from "../../../public/node js.png";
-import python from "../../../public/python.png";
-import r from "../../../public/r.png";
-import react from "../../../public/react.png";
-import sass from "../../../public/sass.png";
-import tailwind from "../../../public/tailwind.png";
-import typescript from "../../../public/typescript.png";
+// import bootstrap from "../../../public/bootstrap.png";
+// import c from "../../../public/c++.png";
+// import css from "../../../public/css.png";
+// import git from "../../../public/git.png";
+// import github from "../../../public/github.png";
+// import html from "../../../public/html.png";
+// import java from "../../../public/java.png";
+// import nextjs from "../../../public/nextjs.png";
+// import nodejs from "../../../public/node js.png";
+// import python from "../../../public/python.png";
+// import r from "../../../public/r.png";
+// import react from "../../../public/react.png";
+// import sass from "../../../public/sass.png";
+// import tailwind from "../../../public/tailwind.png";
+// import typescript from "../../../public/typescript.png";
 
 import fundo1 from "../../../public/1.png";
 
+import { useTranslation } from "@/context/TranslationContext";
+
 export default function Sobre(){
+    const {t} = useTranslation();
+
     return (
         <div className={styles.container}>
             <Image src={fundo1} alt="Image Code" quality={100} className={styles.img}/>
 
             <div className={styles.infos}>
-                <h1>Sobre mim</h1>
+                <h1>{t("sobre.title")}</h1>
 
-                <p>Sou desenvolvedora Full Stack em início de carreira, com formação em Engenharia Agronômica pela Universidade Federal de Goiás (Brasil) e sólida experiência em ambientes corporativos, incluindo multinacionais. Antes da transição para a tecnologia, atuei em grandes empresas e multinacionais, desenvolvendo habilidades como trabalho em equipe, comunicação eficiente e foco em resultados,competências que levo comigo para o mundo do desenvolvimento.</p>
+                <p>{t("sobre.description1")}</p>
                 <br/>
-                <p>Com iniciativa, comprometimento e vontade constante de aprender, estou pronta para atuar em projetos reais e contribuir com soluções eficientes, escaláveis e de impacto.</p>
+                <p>{t("sobre.description2")}</p>
             </div>
 
             <div className={styles.tecnologiasContainer}>
-                <h1>Tecnologias</h1>
+                <h1>{t("sobre.techTitle")}</h1>
                 <div className={styles.tecnologias}>
                     <span>HTML</span>
                     <span>CSS</span>

@@ -6,15 +6,19 @@ import { FiGithub } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
 
+import { useTranslation } from "@/context/TranslationContext";
+
 export default function Contatos(){
+    const {t} = useTranslation();
+
     return (
         <div className={styles.container}>
             <div className={styles.contato}>
-                <span>Gostou do que viu?</span>
-                <span>Ficarei feliz em conversar mais sobre meus projetos e como posso contribuir para a sua equipe.</span>
+                <span>{t("contatos.likeWhatYouSee")}</span>
+                <span>{t("contatos.contactMe")}</span>
                 <div className={styles.link}>
                     <Image src={iconCafe} width={25} height={25} alt="Icon coffee" />
-                    <a href="mailto:nathalliavieiradepadua@gmail.com?subject=Contato via portfólio&body=Olá Nathallia, gostaria de falar sobre...">Fale comigo!</a>
+                    <a href="mailto:nathalliavieiradepadua@gmail.com?subject=Contato via portfólio&body=Olá Nathallia, gostaria de falar sobre...">{t("contatos.linkEmail")}</a>
                 </div>
             </div>
 

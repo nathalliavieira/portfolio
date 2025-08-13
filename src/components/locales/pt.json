@@ -1,0 +1,29 @@
+{   
+    "hero":{
+        "greeting": "Olá, me chamo Nathallia Vieira.",
+        "role": "Sou desenvolvedora fullstack."
+    },
+    "projetos":{
+        "title": "Projetos",
+        "loading": "Carregando...",
+        "clickToView": "Clique aqui para ver imagens do projeto",
+        "viewDetails": "Ver detalhes",
+        "viewCode": "Ver código do projeto"
+    },
+    "sobre":{
+        "title": "Sobre mim",
+        "description1": "Sou desenvolvedora Full Stack em início de carreira, com formação em Engenharia Agronômica pela Universidade Federal de Goiás (Brasil). Antes da transição para a tecnologia, atuei em grandes empresas, desenvolvendo habilidades como trabalho em equipe, comunicação eficiente e foco em resultados, competências que levo comigo para o mundo do desenvolvimento.",
+        "description2": "Com iniciativa, comprometimento e vontade constante de aprender, estou pronta para atuar em projetos reais e contribuir com soluções eficientes, escaláveis e de impacto.",
+        "techTitle": "Tecnologias"
+    },
+    "contatos":{
+        "likeWhatYouSee": "Gostou do que viu?",
+        "contactMe": "Ficarei feliz em conversar mais sobre meus projetos e como posso contribuir para a sua equipe.",
+        "linkEmail": "Fale comigo!"
+    },
+    "menu":{
+        "sobre": "Sobre",
+        "projetos": "Projetos",
+        "contatos": "Contatos"
+    }
+}

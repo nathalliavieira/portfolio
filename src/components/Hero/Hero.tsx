@@ -1,13 +1,13 @@
 "use client"
 
 import styles from "./styles.module.scss";
-import { FiGithub } from "react-icons/fi";
-import { FiLinkedin } from "react-icons/fi";
-import { FiMail } from "react-icons/fi";
-
 import { useEffect, useState } from "react";
 
+import { useTranslation } from "@/context/TranslationContext";
+
 export default function Hero(){
+    const {t} = useTranslation();
+
     const [animKey, setAnimKey] = useState(0);
 
     useEffect(() => {
@@ -20,8 +20,8 @@ export default function Hero(){
     
     return (
         <div className={styles.container}>
-            <h1 key={animKey} className={styles.animacao}>Olá, me chamo Nathallia Vieira.</h1>
-            <h2>Sou desenvolvedora fullstack.</h2>
+            <h1 key={animKey} className={styles.animacao}>{t("hero.greeting")}</h1>
+            <h2>{t("hero.role")}</h2>
 
             <div className={styles.contatos}>
                 {/* <div className={styles.travessao}></div> */}

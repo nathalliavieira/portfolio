@@ -1,0 +1,29 @@
+{   
+    "hero":{
+        "greeting": "Hi, my name is Nathallia Vieira.",
+        "role": "I'm a fullstack developer."
+    },
+    "projetos":{
+        "title": "Projects",
+        "loading": "Loading...",
+        "clickToView": "Click here for images of the project",
+        "viewDetails": "See details",
+        "viewCode": "See project code"
+    },
+    "sobre":{
+        "title": "About me",
+        "description1": "I'm a Full Stack developer at the start of my career, with a degree in Agronomic Engineering from the Federal University of Goiás (Brazil). Before transitioning to technology, I worked in large companies, developing skills such as teamwork, efficient communication and focus on results, competencies that I take with me into the world of development.",
+        "description2": "With initiative, commitment and a constant desire to learn, I'm ready to work on real projects and contribute with efficient, scalable and impactful solutions.",
+        "techTitle": "Technologies"
+    },
+    "contatos":{
+        "likeWhatYouSee": "Did you like what you saw?",
+        "contactMe": "I'd be happy to talk more about my projects and how I can contribute to your team.",
+        "linkEmail": "Contact me!"
+    },
+    "menu":{
+        "sobre": "About",
+        "projetos": "Projects",
+        "contatos": "Contacts"
+    }
+}

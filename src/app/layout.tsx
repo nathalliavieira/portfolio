@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.scss";
 import { Arimo, Pixelify_Sans } from "next/font/google";
 
+import { TranslationProvider } from "@/context/TranslationContext";
+// import LanguageSwitcher from "@/components/LanguageSwitcher";
+
 const arimo = Arimo({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"], // você escolhe os pesos que vai usar
@@ -30,7 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${arimo.variable} ${pixelifySans.variable}`}>
-        {children}
+        <TranslationProvider>
+          {/* <LanguageSwitcher /> */}
+
+          {children}
+        </TranslationProvider>
       </body>
     </html>
   );

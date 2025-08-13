@@ -13,6 +13,8 @@ import { useState, useEffect } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
+import { useTranslation } from "@/context/TranslationContext";
+
 interface ProjectProps{
     id: number;
     nome: string;
@@ -35,11 +37,13 @@ export default function Projetos(){
     const [index, setIndex] = useState<number>(-1);
     const [slides, setSlides] = useState<{ src: string }[]>([]);
 
+    const {t, lang} = useTranslation();
+
     useEffect(() => {
         async function carregarProjetos(){
             try{
                 setLoading(true);
-                const res = await fetch("/api/projetos");
+                const res = await fetch(`/api/projetos?lang=${lang}`);
 
                 if(!res.ok){
                     throw new Error(`Erro na requisição: ${res.status}`);
@@ -65,11 +69,11 @@ export default function Projetos(){
 
     return (
         <div className={styles.container}>
-            <h1>Projetos</h1>
+            <h1>{t("projetos.title")}</h1>
 
             {loading && (
                 <div className={styles.loading}>
-                    <h2>Carregando...</h2>
+                    <h2>{t("projetos.loading")}</h2>
                     <Image src={loadingGif} alt="Gif loading" height={70} width={70} />
                 </div>
             )}
@@ -81,7 +85,7 @@ export default function Projetos(){
                         <div className={styles.capaContainer} onClick={() => abrirLightbox(projeto.imagensDetalhes, 0)}>
                             <Image src={projeto.capa} alt="capa" height={280} width={500} className={styles.capa} />
                             <div className={styles.overlay}>
-                                <span>Clique aqui para ver imagens do projeto</span>
+                                <span>{t("projetos.clickToView")}</span>
                             </div>
                         </div>
 
@@ -91,8 +95,8 @@ export default function Projetos(){
                             <span className={styles.tecnologias}>{projeto.tecnologias}</span>
 
                             <div className={styles.links}>
-                                <a href={projeto.vercel} target="_blank" rel="noopener noreferrer" className={styles.vercel}>Ver detalhes <FiChevronRight size={15} className={styles.icon}/></a>
-                                <a href={projeto.github} target="_blank" rel="noopener noreferrer">Ver código do projeto <FiGithub size={15} className={styles.icon}/></a>
+                                <a href={projeto.vercel} target="_blank" rel="noopener noreferrer" className={styles.vercel}>{t("projetos.viewDetails")} <FiChevronRight size={15} className={styles.icon}/></a>
+                                <a href={projeto.github} target="_blank" rel="noopener noreferrer">{t("projetos.viewCode")} <FiGithub size={15} className={styles.icon}/></a>
                             </div>
                         </div>
                     </div>
