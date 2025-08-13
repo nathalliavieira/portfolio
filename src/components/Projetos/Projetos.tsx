@@ -83,7 +83,7 @@ export default function Projetos(){
                     <div className={styles.infos} key={projeto.id}>
 
                         <div className={styles.capaContainer} onClick={() => abrirLightbox(projeto.imagensDetalhes, 0)}>
-                            <Image src={projeto.capa} alt="capa" height={280} width={500} className={styles.capa} />
+                            <Image src={projeto.capa} alt="capa" height={280} width={520} className={styles.capa}/>
                             <div className={styles.overlay}>
                                 <span>{t("projetos.clickToView")}</span>
                             </div>
