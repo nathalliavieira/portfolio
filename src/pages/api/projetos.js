@@ -130,8 +130,11 @@ export default function handler(req, res){
                 {
                     src: "/images/projetos/projetoTaskPlus/sectionTaskDetails.png",
                     title: "Section Task Details"
+                },
+                {
+                    src: "/images/projetos/projetoTaskPlus/allTasks.png",
+                    title: "All tasks"
                 }
-                
             ],
             vercel: "https://tasksplus-omega.vercel.app/",
             github: "https://github.com/nathalliavieira/tasksplus",
