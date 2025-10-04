@@ -1,16 +1,16 @@
 export default function handler(req, res){
-    const lang = req.query.lang?.toLowerCase() || "es";
+    const lang = "es" || req.query.lang?.toLowerCase();
 
     const projetos = [
         {
             id: 1,
             nome: {
-                pt: "Plataforma de Conexão entre Pacientes e Clínicas de Saúde",
+                // pt: "Plataforma de Conexão entre Pacientes e Clínicas de Saúde",
                 en: "Patient-clinic connection platform",
                 es: "Plataforma de conexión paciente-clínica"
             },
             descricao: {
-                pt: "Solução digital que conecta pacientes e clínicas, facilitando o agendamento de consultas e oferecendo às clínicas uma agenda inteligente e organizada.",
+                // pt: "Solução digital que conecta pacientes e clínicas, facilitando o agendamento de consultas e oferecendo às clínicas uma agenda inteligente e organizada.",
                 en: "A digital solution that connects patients and clinics, facilitating the scheduling of appointments and offering clinics an intelligent and organized agenda.",
                 es: "Una solución digital que conecta a pacientes y clínicas, facilitando la programación de citas y ofreciendo a las clínicas una agenda inteligente y organizada."
             },
@@ -64,12 +64,12 @@ export default function handler(req, res){
         {
             id: 2,
             nome: {
-                pt: "Gestão de pedidos para restaurantes",
+                // pt: "Gestão de pedidos para restaurantes",
                 en: "Order management for restaurants",
                 es: "Gestión de pedidos para restaurantes"
             },
             descricao: {
-                pt: "Sistema completo para gerenciamento de restaurantes, com cadastro de produtos e categorias, controle de pedidos em andamento e aplicativo mobile exclusivo para garçons realizarem abertura de mesas e adição de pedidos.",
+                // pt: "Sistema completo para gerenciamento de restaurantes, com cadastro de produtos e categorias, controle de pedidos em andamento e aplicativo mobile exclusivo para garçons realizarem abertura de mesas e adição de pedidos.",
                 en: "Complete system for restaurant management, with product and category registration, control of orders in progress and an exclusive mobile application for waiters to open tables and add orders.",
                 es: "Sistema completo para la gestión de restaurantes, con registro de productos y categorías, control de pedidos en curso y aplicación móvil exclusiva para que los camareros puedan abrir mesas y añadir pedidos."
             },
@@ -135,12 +135,12 @@ export default function handler(req, res){
         {
             id: 3,
             nome: {
-                pt: "Aplicação web para compra e venda de veículos",
+                // pt: "Aplicação web para compra e venda de veículos",
                 en: "Web application to buy and sell cars",
                 es: "Marketplace de vehículos en línea"
             },
             descricao: {
-                pt: "Plataforma digital para compra e venda de carros, com login, gerenciamento de anúncios e visualização dos veículos disponíveis.",
+                // pt: "Plataforma digital para compra e venda de carros, com login, gerenciamento de anúncios e visualização dos veículos disponíveis.",
                 en: "Digital platform for buying and selling cars, with login, managing ads and viewing available vehicles.",
                 es: "Plataforma digital para compra y venta de coches, con inicio de sesión, gestión de anuncios y visualización de los vehículos disponibles."
             },
@@ -178,12 +178,12 @@ export default function handler(req, res){
         {
             id: 4,
             nome: {
-                pt: "Lista de tarefas colaborativa",
+                // pt: "Lista de tarefas colaborativa",
                 en: "Collaborative to-do list",
                 es: "Lista de tareas colaborativa"
             },
             descricao: {
-                pt: "Plataforma de gerenciamento de tarefas onde, além de criar listas pessoais, é possível torná-las públicas para que outras pessoas visualizem e interajam por meio de comentários.",
+                // pt: "Plataforma de gerenciamento de tarefas onde, além de criar listas pessoais, é possível torná-las públicas para que outras pessoas visualizem e interajam por meio de comentários.",
                 en: "A task management platform where, as well as creating personal lists, you can make them public for other people to view and interact with via comments.",
                 es: "Plataforma de gestión de tareas en la que, además de crear listas personales, es posible hacerlas públicas para que otras personas las vean e interactúen mediante comentarios."
             },
@@ -213,12 +213,12 @@ export default function handler(req, res){
         {
             id: 5,
             nome: {
-                pt: "Plataforma interativa de filmes",
+                // pt: "Plataforma interativa de filmes",
                 en: "Interactive movie platform",
                 es: "Plataforma interactiva de películas"
             },
             descricao: {
-                pt: "Plataforma interativa de descoberta de filmes, integrada a uma API externa para exibir informações atualizadas. O usuário pode explorar detalhes e criar sua própria lista personalizada de favoritos.",
+                // pt: "Plataforma interativa de descoberta de filmes, integrada a uma API externa para exibir informações atualizadas. O usuário pode explorar detalhes e criar sua própria lista personalizada de favoritos.",
                 en: "Interactive movie discovery platform, integrated with an external API to display updated information. Users can explore the details and create their own personalized list of favorites.",
                 es: "Plataforma interactiva de descubrimiento de películas, integrada con una API externa. El usuario puede explorar los detalles y crear su propia lista personalizada de favoritos."
             },
@@ -244,12 +244,12 @@ export default function handler(req, res){
         {
             id: 6,
             nome: {
-                pt: "Landing Page Responsiva",
+                // pt: "Landing Page Responsiva",
                 en: "Responsive landing page",
                 es: "Landing Page adaptativa"
             },
             descricao: {
-                pt: "Landing page desenvolvida como exercício de prática em front-end, com foco em estruturação, responsividade e organização do layout.",
+                // pt: "Landing page desenvolvida como exercício de prática em front-end, com foco em estruturação, responsividade e organização do layout.",
                 en: "Landing page developed as an exercise in front-end practice, with a focus on structuring, responsiveness and layout organization.",
                 es: "Landing page desarrollada como ejercicio de práctica front-end, centrada en la estructuración, la capacidad de respuesta y la organización del diseño."
             },

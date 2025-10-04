@@ -20,12 +20,9 @@ export default function Hero(){
         <div className="w-full flex flex-col items-center mb-6 justify-center gap-3 md:py-[96px] md:px-[120px] md:items-start">
 
             <h1 
-                className={`font-pixelify font-normal text-2xl md:text-[36px] 
-                    text-[var(--botaoHover)] 
-                    overflow-hidden whitespace-nowrap
-                    w-0 animate-typing
-                    [text-shadow:-1px_-1px_0_black,1px_-1px_0_black,-1px_1px_0_black,1px_1px_0_black] ${animKey ? "animate-typing" : ""}`}>
-                        {t("hero.greeting")}
+                className={`font-pixelify font-normal text-2xl text-center md:text-start md:text-[36px] text-[var(--botaoHover)] overflow-hidden whitespace-nowrap w-0 animate-typing border-r-0 [text-shadow:-1px_-1px_0_black,1px_-1px_0_black,-1px_1px_0_black,1px_1px_0_black] ${animKey ? "animate-typing" : ""}`}>
+                    {t("hero.greeting")}
+                    <span className="borer-r-2 border-[var(--botaoHover)]animate-blink ml-1" />
             </h1>
 
             <h2 className="text-[var(--textoPrincipal)] text-xl md:text-2xl font-medium">{t("hero.role")}</h2>

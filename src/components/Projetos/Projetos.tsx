@@ -79,18 +79,18 @@ export default function Projetos(){
                 </div>
             )}
 
-            <div className="flex flex-col md:grid grid-cols-2 gap-[40px] xl:gap-[80px]">
+            <div className="flex flex-col md:grid grid-cols-2 gap-[40px] md:gap-4 xl:gap-[80px]">
                 {projetos.map((projeto) => (
-                    <div className="flex flex-col items-center justify-center shadow-purple rounded-2xl transition-transform duration-300 ease-in-out md:hover:scale-105 md:hover:shadow-purple" key={projeto.id}>
+                    <div className="flex flex-col items-center justify-center shadow-purple rounded-2xl transition-transform duration-300 ease-in-out lg:hover:scale-105 lg:hover:shadow-purple" key={projeto.id}>
 
                         {/* 1 bloco */}
                         <div className="relative inline-block cursor-pointer group" onClick={() => abrirLightbox(projeto.imagensDetalhes, 0)}>
 
-                            <Image src={projeto.capa} alt="capa" height={280} width={520} className="block transition duration-300 ease-in-out rounded-t-2xl h-[200px] w-[360px] lg:h-[260px] lg:w-[460px] xl:h-[280px] xl:w-[520px] md:group-hover:brightness-75 object-cover"/>
+                            <Image src={projeto.capa} alt="capa" height={280} width={520} className="block transition duration-300 ease-in-out rounded-t-2xl h-[200px] w-[360px] lg:h-[260px] lg:w-[460px] xl:h-[280px] xl:w-[520px] lg:group-hover:brightness-75 object-cover"/>
 
-                            <div className="absolute bottom-0 left-0 right-0 bg-[rgba(167,139,250,0.38)] text-gray-400 flex items-center justify-center transition-opacity duration-300 ease-in-out text-center md:group-hover:opacity-100 md:p-2 opacity-100 text-sm
+                            <div className="absolute bottom-0 left-0 right-0 bg-[rgba(167,139,250,0.38)] text-gray-400 flex items-center justify-center transition-opacity duration-300 ease-in-out text-center lg:group-hover:opacity-100 lg:p-2 opacity-100 text-sm
                             
-                            md:inset-0 md:bg-black/50 md:rounded-t-2xl md:text-xl md:opacity-0
+                            lg:inset-0 lg:bg-black/50 lg:rounded-t-2xl lg:text-xl lg:opacity-0
                             ">
                                 <span>{t("projetos.clickToView")}</span> 
                             </div>
@@ -98,7 +98,7 @@ export default function Projetos(){
                         </div>
 
                         {/* 2 bloco */}
-                        <div className="flex flex-col items-center justify-center gap-1 lg:gap-5 bg-[#f4f6fb] py-3 rounded-b-2xl">
+                        <div className="flex flex-col items-center justify-center gap-3 lg:gap-5 bg-[#f4f6fb] py-3 rounded-b-2xl">
 
                             <p className="max-w-[360px] lg:max-w-[460px] xl:max-w-[480px] text-center font-bold lg:text-xl lg:font-semibold text-[var(--textoSecundario)] flex items-center">{projeto.nome}</p>
 

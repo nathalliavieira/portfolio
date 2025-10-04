@@ -7,7 +7,7 @@ import en from "@/components/locales/en.json";
 import es from "@/components/locales/es.json";
 
 // type Lang = "pt" | "en" | "es";
-type Lang = "en" | "es";
+type Lang = "es" | "en";
 
 // type Translations = typeof pt;
 type Translations = typeof es;

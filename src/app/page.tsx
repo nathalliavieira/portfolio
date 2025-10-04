@@ -40,8 +40,13 @@ export default function Home() {
           
           <div className="flex items-center justify-center gap-1 md:gap-3">
             <div className="flex items-center justify-center gap-1">
-              <button disabled={lang === "en"} onClick={() => changeLang("en")} className="text-[var(--textoPrincipal)] border border-[var(--primaria)] rounded-[3px] h-[17px] flex items-center justify-center text-[12px] p-0.5 disabled:bg-[#7c3aed7c]">US</button>
-              <button disabled={lang === "es"} onClick={() => changeLang("es")} className="text-[var(--textoPrincipal)] border border-[var(--primaria)] rounded-[3px] h-4 flex items-center justify-center text-[12px] p-0.5 disabled:bg-[#7c3aed7c]">ES</button>
+              <button disabled={lang === "en"} onClick={() => changeLang("en")} className="text-[var(--textoPrincipal)] border border-[var(--primaria)] rounded-[3px] h-[17px] flex items-center justify-center text-[12px] p-0.5 disabled:bg-[#7c3aed7c]">
+                US
+              </button>
+
+              <button disabled={lang === "es"} onClick={() => changeLang("es")} className="text-[var(--textoPrincipal)] border border-[var(--primaria)] rounded-[3px] h-4 flex items-center justify-center text-[12px] p-0.5 disabled:bg-[#7c3aed7c]">
+                ES
+              </button>
             </div>
 
             <nav className="hidden md:flex items-center justify-center gap-3">

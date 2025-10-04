@@ -40,19 +40,19 @@ module.exports = {
       //   md: "calc(var(--radius) - 2px)",
       //   sm: "calc(var(--radius) - 4px)",
       // },
-      keyframes: {
-        typing: {
-          from: { width: "0", borderRight: "3px solid var(--botaoHover)" },
-          to: { width: "25ch", borderRight: "3px solid transparent" },
-        },
-        blink: {
-          "50%": { borderColor: "transparent" },
-        },
-      },
-      animation: {
-        typing: "typing 4s steps(25, end) forwards, blink 0.5s step-end infinite",
-      },
-    },
+      keyframes: { 
+        typing: { 
+          from: { width: "0", borderRight: "3px solid var(--botaoHover)" }, 
+          to: { width: "25ch", borderRight: "3px solid transparent" }, 
+        }, 
+      blink: { 
+        "50%": { borderColor: "transparent" }, 
+      }, 
+    }, 
+    animation: { 
+      typing: "typing 4s steps(25, end) forwards, blink 0.5s step-end infinite", 
+    }, 
+  },
   },
   plugins: [],
 };
