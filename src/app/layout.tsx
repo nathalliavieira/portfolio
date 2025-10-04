@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.scss";
+import "@/styles/globals.css";
 import { Arimo, Pixelify_Sans } from "next/font/google";
 
 import { TranslationProvider } from "@/context/TranslationContext";
@@ -18,8 +18,8 @@ const pixelifySans = Pixelify_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Nathallia Vieira - Portfólio",
-  description: "Portfólio",
+  title: "Nathallia Vieira - Portafolio",
+  description: "Portafolio",
   icons: {
     icon: "/logo.png",
   },
@@ -31,13 +31,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={`${arimo.variable} ${pixelifySans.variable}`}>
-        <TranslationProvider>
-          {/* <LanguageSwitcher /> */}
-
-          {children}
-        </TranslationProvider>
+          <TranslationProvider>
+            {/* <LanguageSwitcher /> */}
+            {children}
+          </TranslationProvider>
       </body>
     </html>
   );

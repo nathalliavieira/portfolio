@@ -1,4 +1,3 @@
-import styles from "./styles.module.scss";
 import Image from "next/image";
 
 // import bootstrap from "../../../public/bootstrap.png";
@@ -21,39 +20,47 @@ import fundo1 from "../../../public/1.png";
 
 import { useTranslation } from "@/context/TranslationContext";
 
+const listTecnologias = [
+    {tecnologia: "HTML"},
+    {tecnologia: "CSS"},
+    {tecnologia: "JavaScript"},
+    {tecnologia: "Next.js"},
+    {tecnologia: "Node.js"},
+    {tecnologia: "ReactJS"},
+    {tecnologia: "TypeScript"},
+    {tecnologia: "Sass"},
+    {tecnologia: "Tailwind"},
+    {tecnologia: "Bootstrap"},
+    {tecnologia: "Git"},
+    {tecnologia: "GitHub"},
+    {tecnologia: "Python"},
+    {tecnologia: "C++"},
+    {tecnologia: "R"},
+]
+
 export default function Sobre(){
     const {t} = useTranslation();
 
     return (
-        <div className={styles.container}>
-            <Image src={fundo1} alt="Image Code" quality={100} className={styles.img}/>
+        <div className="w-full flex flex-col items-center justify-center">
+                <Image src={fundo1} alt="Image Code" quality={100} className="hidden md:block object-cover md:max-w-[80%]" />
 
-            <div className={styles.infos}>
-                <h1>{t("sobre.title")}</h1>
+            <div className="bg-[var(--botaoHover)] w-full flex flex-col items-center justify-center pb-[120px] pt-[50px] xl:pt-[60px] px-[50px] xl:px-[160px] text-center">
+                <h1 className="text-[#f4f6fb] text-3xl md:text-4xl mb-8 font-bold">{t("sobre.title")}</h1>
 
-                <p>{t("sobre.description1")}</p>
+                <p className="text-[#f4f6fb] text-sm md:text-lg font-semibold">{t("sobre.description1")}</p>
                 <br/>
-                <p>{t("sobre.description2")}</p>
+                <p className="text-[#f4f6fb] text-sm md:text-lg font-semibold">{t("sobre.description2")}</p>
             </div>
 
-            <div className={styles.tecnologiasContainer}>
-                <h1>{t("sobre.techTitle")}</h1>
-                <div className={styles.tecnologias}>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Next.js</span>
-                    <span>NodeJS</span>
-                    <span>ReactJS</span>
-                    <span>TypeScript</span>
-                    <span>Sass</span>
-                    <span>Tailwind</span>
-                    <span>Bootstrap</span>
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>Python</span>
-                    <span>C++</span>
-                    <span>R</span>
+            <div className="bg-[#f4f6fb] rounded-3xl flex flex-col items-center justify-center w-[360px] md:w-[550px] -mt-[80px] shadow-purple text-[var(--textoPrincipal)] md:mb-[44px] gap-4 md:gap-8 py-6 h-[350px]">
+                <h1 className="text-3xl md:text-3xl font-bold">{t("sobre.techTitle")}</h1>
+                <div className="grid grid-cols-3 gap-3 mb-3">
+                    {listTecnologias.map ((item, index) => (
+                        <span key={index} className="bg-[var(--realceLinkHover)] text-[#f4f6fb] rounded-md text-center text-sm md:text-lg p-2 md:p-1 shadow-purple font-semibold w-[80px] md:w-[120px]">
+                            {item.tecnologia}
+                        </span>
+                    ))}
                 </div>
             </div>
 

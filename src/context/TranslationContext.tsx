@@ -2,15 +2,18 @@
 
 import { createContext, useContext, useState, useEffect } from "react";
 
-import pt from "@/components/locales/pt.json";
+// import pt from "@/components/locales/pt.json";
 import en from "@/components/locales/en.json";
 import es from "@/components/locales/es.json";
 
-type Lang = "pt" | "en" | "es";
+// type Lang = "pt" | "en" | "es";
+type Lang = "en" | "es";
 
-type Translations = typeof pt;
+// type Translations = typeof pt;
+type Translations = typeof es;
 
-const translations = { pt, en, es };
+// const translations = { pt, en, es };
+const translations = { en, es };
 
 interface TranslationContextType{
     lang: Lang;
@@ -21,7 +24,8 @@ interface TranslationContextType{
 const TranslationContext = createContext<TranslationContextType | undefined>(undefined);
 
 export function TranslationProvider({ children }: { children: React.ReactNode }){
-    const [lang, setLang] = useState<Lang>("pt");
+    // const [lang, setLang] = useState<Lang>("pt");
+    const [lang, setLang] = useState<Lang>("es");
 
     useEffect(() => {
         const savedLang = localStorage.getItem("lang") as Lang;

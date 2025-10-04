@@ -6,7 +6,7 @@
     "projetos":{
         "title": "Projects",
         "loading": "Loading...",
-        "clickToView": "Click here for images of the project",
+        "clickToView": "Click on the image to see project details.",
         "viewDetails": "See details",
         "viewCode": "See project code"
     },

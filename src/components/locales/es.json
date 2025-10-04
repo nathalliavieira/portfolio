@@ -6,9 +6,9 @@
     "projetos":{
         "title": "Proyectos",
         "loading": "Cargando...",
-        "clickToView": "Haga clic aquí para ver imágenes del proyecto.",
+        "clickToView": "Haga clic en la imagen para ver los detalles del proyecto.",
         "viewDetails": "Ver detalles",
-        "viewCode": "Ver código del proyecto"
+        "viewCode": "Código del proyecto"
     },
     "sobre":{
         "title": "Acerca de mí",
