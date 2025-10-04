@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Nathallia Vieira - Portafolio",
   description: "Portafolio",
   icons: {
-    icon: "/logo.png",
+    icon: "/favicon.ico",
   },
 };
 
