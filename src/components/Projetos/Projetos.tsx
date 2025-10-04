@@ -41,10 +41,16 @@ export default function Projetos(){
     const {t, lang} = useTranslation();
 
     useEffect(() => {
-        async function carregarProjetos(){
+        if (!lang) return;
+
+        const carregarProjetos = async () => {
             try{
                 setLoading(true);
-                const res = await fetch(`/api/projetos?lang=${lang}`);
+
+                const url = `/api/projetos?lang=${encodeURIComponent(lang)}`;
+                // console.log("🔍 Fazendo requisição para:", url);
+
+                const res = await fetch(url, { cache: "no-store" });
 
                 if(!res.ok){
                     throw new Error(`Erro na requisição: ${res.status}`);
@@ -58,7 +64,7 @@ export default function Projetos(){
             }finally{
                 setLoading(false);
             }
-        };
+        }
 
         carregarProjetos();
     },[lang]);
@@ -100,7 +106,7 @@ export default function Projetos(){
                         {/* 2 bloco */}
                         <div className="flex flex-col items-center justify-center gap-3 lg:gap-5 bg-[#f4f6fb] py-3 rounded-b-2xl">
 
-                            <p className="max-w-[360px] lg:max-w-[460px] xl:max-w-[480px] text-center font-bold lg:text-xl lg:font-semibold text-[var(--textoSecundario)] flex items-center">{projeto.nome}</p>
+                            <p className="max-w-[360px] lg:max-w-[460px] xl:max-w-[480px] text-center font-bold lg:text-xl lg:font-semibold text-[var(--textoSecundario)] flex items-center">{t(projeto.nome)}</p>
 
                             <span className="max-w-[360px] lg:max-w-[460px] xl:max-w-[480px] flex items-center md:h-[74px] text-[var(--textoSecundario)] text-center text-[14px] leading-[16px] lg:text-base px-1">{projeto.descricao}</span>
 
