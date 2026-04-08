@@ -214,6 +214,45 @@ export default function handler(req, res){
             id: 5,
             nome: {
                 // pt: "Plataforma interativa de filmes",
+                en: "Campground Finder & Listing App",
+                es: "Aplicación para buscar y listar campings"
+            },
+            descricao: {
+                // pt: "Plataforma interativa de descoberta de filmes, integrada a uma API externa para exibir informações atualizadas. O usuário pode explorar detalhes e criar sua própria lista personalizada de favoritos.",
+                en: "A web platform that allows users to discover and register campgrounds with detailed information such as price, location, and photos.",
+                es: "Una plataforma web que permite a los usuarios buscar y registrar campings con información detallada, como el precio, la ubicación y fotos."
+            },
+            tecnologias: "Node.js | Express | MongoDB | EJS | Bootstrap",
+            capa: "/projetoYelpCamp.png",
+            imagensDetalhes: [
+                {
+                    src: "/images/projetos/projetoYelpCamp/home.png",
+                    title: "Home"
+                },
+                {
+                    src: "/images/projetos/projetoYelpCamp/all_campgrounds.png",
+                    title: "All Campgrounds"
+                },
+                {
+                    src: "/images/projetos/projetoYelpCamp/details_campgrounds.png",
+                    title: "Campground Details"
+                },
+                {
+                    src: "/images/projetos/projetoYelpCamp/login.png",
+                    title: "Login Page"
+                },
+                {
+                    src: "/images/projetos/projetoYelpCamp/new_campground.png",
+                    title: "New Campground Page"
+                }
+            ],
+            vercel: "https://yelpcamp-io27.onrender.com/",
+            github: "https://github.com/nathalliavieira/yelpcamp",
+        },
+        {
+            id: 6,
+            nome: {
+                // pt: "Plataforma interativa de filmes",
                 en: "Interactive movie platform",
                 es: "Plataforma interactiva de películas"
             },
@@ -241,41 +280,41 @@ export default function handler(req, res){
             vercel: "https://primeflix-dun.vercel.app/",
             github: "https://github.com/nathalliavieira/primeflix",
         },
-        {
-            id: 6,
-            nome: {
-                // pt: "Landing Page Responsiva",
-                en: "Responsive landing page",
-                es: "Landing Page adaptativa"
-            },
-            descricao: {
-                // pt: "Landing page desenvolvida como exercício de prática em front-end, com foco em estruturação, responsividade e organização do layout.",
-                en: "Landing page developed as an exercise in front-end practice, with a focus on structuring, responsiveness and layout organization.",
-                es: "Landing page desarrollada como ejercicio de práctica front-end, centrada en la estructuración, la capacidad de respuesta y la organización del diseño."
-            },
-            tecnologias: "HTML | CSS | JavaScript",
-            capa: "/projetoLandingPage.png",
-            imagensDetalhes: [
-                {
-                    src: "/images/projetos/projetoLandingPage/1.png",
-                    title: "Picture 1"
-                },
-                {
-                    src: "/images/projetos/projetoLandingPage/2.png",
-                    title: "Picture 2"
-                },
-                {
-                    src: "/images/projetos/projetoLandingPage/3.png",
-                    title: "Picture 3"
-                },
-                {
-                    src: "/images/projetos/projetoLandingPage/4.png",
-                    title: "Picture 4"
-                },
-            ],
-            vercel: "https://landingpage-clipboard.vercel.app/",
-            github: "https://github.com/nathalliavieira/landingpage-clipboard",
-        }
+        // {
+        //     id: 6,
+        //     nome: {
+        //         // pt: "Landing Page Responsiva",
+        //         en: "Responsive landing page",
+        //         es: "Landing Page adaptativa"
+        //     },
+        //     descricao: {
+        //         // pt: "Landing page desenvolvida como exercício de prática em front-end, com foco em estruturação, responsividade e organização do layout.",
+        //         en: "Landing page developed as an exercise in front-end practice, with a focus on structuring, responsiveness and layout organization.",
+        //         es: "Landing page desarrollada como ejercicio de práctica front-end, centrada en la estructuración, la capacidad de respuesta y la organización del diseño."
+        //     },
+        //     tecnologias: "HTML | CSS | JavaScript",
+        //     capa: "/projetoLandingPage.png",
+        //     imagensDetalhes: [
+        //         {
+        //             src: "/images/projetos/projetoLandingPage/1.png",
+        //             title: "Picture 1"
+        //         },
+        //         {
+        //             src: "/images/projetos/projetoLandingPage/2.png",
+        //             title: "Picture 2"
+        //         },
+        //         {
+        //             src: "/images/projetos/projetoLandingPage/3.png",
+        //             title: "Picture 3"
+        //         },
+        //         {
+        //             src: "/images/projetos/projetoLandingPage/4.png",
+        //             title: "Picture 4"
+        //         },
+        //     ],
+        //     vercel: "https://landingpage-clipboard.vercel.app/",
+        //     github: "https://github.com/nathalliavieira/landingpage-clipboard",
+        // }
     ];
 
     const projetosTraduzidos = projetos.map(p => ({
