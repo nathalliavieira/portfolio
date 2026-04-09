@@ -234,7 +234,7 @@ export default function handler(req, res){
                     title: "All Campgrounds"
                 },
                 {
-                    src: "/images/projetos/projetoYelpCamp/details_campgrounds.png",
+                    src: "/images/projetos/projetoYelpCamp/details_campground.png",
                     title: "Campground Details"
                 },
                 {
